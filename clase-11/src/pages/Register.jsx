@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { getAuth, onAuthStateChanged } from "firebase/auth";
+import { createUserWithEmailAndPassword, getAuth, onAuthStateChanged } from "firebase/auth";
 import firebaseApp from "../firebase";
 import GoogleLogin from "../components/GoogleLogin/GoogleLogin";
 
@@ -27,7 +27,19 @@ function Register() {
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
-		// Completar con el método de Firebase para registrar un nuevo usuario.
+		setLoading(true);
+		setError("");
+		createUserWithEmailAndPassword(firebaseAuth, formData.email, formData.password)
+			.then(() => {
+				navigate("/welcome");
+			})
+			.catch((error) => {
+				console.error("Error creating user:", error);
+				setError("Error al crear usuario. Intenta nuevamente más tarde.");
+			})
+			.finally(() => {
+				setLoading(false);
+			});
 	};
 
 	const handleChange = (e) => {
