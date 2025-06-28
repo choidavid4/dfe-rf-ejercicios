@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { MOVIES } from "../../data/movies";
 import MovieCard from "../../components/MovieCard/MovieCard";
 import styles from "./Welcome.module.css";
+import { motion, AnimatePresence } from "framer-motion";
 
 function Welcome() {
 	const navigate = useNavigate();
@@ -63,9 +64,19 @@ function Welcome() {
 			<hr />
 			<h2>Mis películas favoritas</h2>
 			<div className={styles["movies-container"]}>
-				{favoriteMovies.map((movie) => (
-					<MovieCard key={movie.id} movie={movie} isFavorite={true} onFavorite={handleFavorite} />
-				))}
+				<AnimatePresence>
+					{favoriteMovies.map((movie) => (
+						<motion.div
+							key={movie.id}
+							initial={{ opacity: 0, y: 30 }}
+							animate={{ opacity: 1, y: 0 }}
+							exit={{ opacity: 0, y: -30 }}
+							transition={{ duration: 0.4, ease: "easeInOut" }}
+						>
+							<MovieCard key={movie.id} movie={movie} isFavorite={true} onFavorite={handleFavorite} />
+						</motion.div>
+					))}
+				</AnimatePresence>
 			</div>
 			<h2>Películas</h2>
 			<div className={styles["movies-container"]}>
