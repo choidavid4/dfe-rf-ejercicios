@@ -57,7 +57,7 @@ export default function ResetPassword() {
 
 	if (success) {
 		return (
-			<div className="auth-component">
+			<div className="auth-container">
 				<h2>Contraseña restablecida</h2>
 				<p>Tu contraseña ha sido actualizada exitosamente.</p>
 				<Link to="/login">
@@ -68,7 +68,7 @@ export default function ResetPassword() {
 	}
 
 	return (
-		<div className="auth-component">
+		<div className="auth-container">
 			<h2>Restablecer contraseña</h2>
 			<form onSubmit={handleSubmit} className="auth-container__form">
 				<input

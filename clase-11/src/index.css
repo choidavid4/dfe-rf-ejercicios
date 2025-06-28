@@ -75,3 +75,13 @@ input {
 	width: 100%;
 	min-width: 240px;
 }
+
+p {
+	margin: 0.5em 0;
+}
+
+h2,
+h3,
+h4 {
+	margin: 0.75em 0;
+}

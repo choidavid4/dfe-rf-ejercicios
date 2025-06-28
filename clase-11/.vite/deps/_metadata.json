@@ -1,0 +1,58 @@
+{
+  "hash": "7028fe31",
+  "configHash": "9012adff",
+  "lockfileHash": "51625495",
+  "browserHash": "fa0d8529",
+  "optimized": {
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "1c387d75",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "796468e6",
+      "needsInterop": true
+    },
+    "react-router-dom": {
+      "src": "../../node_modules/react-router-dom/dist/index.mjs",
+      "file": "react-router-dom.js",
+      "fileHash": "800237ce",
+      "needsInterop": false
+    },
+    "firebase/auth": {
+      "src": "../../node_modules/firebase/auth/dist/esm/index.esm.js",
+      "file": "firebase_auth.js",
+      "fileHash": "ddb1dd28",
+      "needsInterop": false
+    },
+    "firebase/app": {
+      "src": "../../node_modules/firebase/app/dist/esm/index.esm.js",
+      "file": "firebase_app.js",
+      "fileHash": "451f6658",
+      "needsInterop": false
+    },
+    "react-icons/si": {
+      "src": "../../node_modules/react-icons/si/index.mjs",
+      "file": "react-icons_si.js",
+      "fileHash": "206ca8b1",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-XQIPT53K": {
+      "file": "chunk-XQIPT53K.js"
+    },
+    "chunk-7DYKWC54": {
+      "file": "chunk-7DYKWC54.js"
+    },
+    "chunk-KS2M7ZJI": {
+      "file": "chunk-KS2M7ZJI.js"
+    },
+    "chunk-5WRI5ZAA": {
+      "file": "chunk-5WRI5ZAA.js"
+    }
+  }
+}

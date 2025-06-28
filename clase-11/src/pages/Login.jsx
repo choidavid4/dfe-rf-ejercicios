@@ -45,7 +45,7 @@ function Login() {
 	};
 
 	return (
-		<div className="auth-component">
+		<div className="auth-container">
 			<h2>Iniciar sesión</h2>
 			<form onSubmit={handleSubmit} className="auth-container__form">
 				<input type="email" placeholder="Email" required name="email" value={formData.email} onChange={handleChange} />

@@ -47,7 +47,7 @@ function Register() {
 	};
 
 	return (
-		<div className="auth-component">
+		<div className="auth-container">
 			<h2>Registrarse</h2>
 			<form onSubmit={handleSubmit} className="auth-container__form">
 				<input type="text" placeholder="Nombre" required name="name" value={formData.name} onChange={handleChange} />

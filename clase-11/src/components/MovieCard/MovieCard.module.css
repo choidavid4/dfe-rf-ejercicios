@@ -1,0 +1,36 @@
+.movie-card {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border: 3px solid #b9b9b9;
+	background-color: #191919;
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+	border-radius: 1em;
+	width: 475px;
+	gap: 1em;
+	padding-right: 1em;
+	cursor: pointer;
+
+	h3,
+	p {
+		padding: 0 1em;
+	}
+
+	button {
+		background-color: transparent;
+		border: none;
+		cursor: pointer;
+		padding: 0.75em;
+		border-radius: 100px;
+		line-height: 0;
+	}
+}
+
+.movie-card img {
+	height: 100%;
+	border-radius: 1em;
+	object-fit: cover;
+	object-position: center center;
+	width: 200px;
+	box-shadow: 0 4px 10px 0 rgba(75, 75, 75, 0.5);
+}

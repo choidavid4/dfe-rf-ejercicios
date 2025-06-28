@@ -36,7 +36,7 @@ function ForgotPassword() {
 	};
 
 	return (
-		<div className="auth-component">
+		<div className="auth-container">
 			<h2>Recuperar contraseña</h2>
 			{!submitted ? (
 				<>

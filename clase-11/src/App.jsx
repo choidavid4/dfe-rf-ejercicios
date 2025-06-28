@@ -3,7 +3,7 @@ import "./App.css";
 import Register from "./pages/Register.jsx";
 import Login from "./pages/Login.jsx";
 import ForgotPassword from "./pages/ForgotPassword.jsx";
-import Welcome from "./pages/Welcome.jsx";
+import Welcome from "./pages/Welcome/Welcome.jsx";
 import ResetPassword from "./pages/ResetPassword.jsx";
 import FirebaseErrorBoundary from "./components/FirebaseErrorBoundary/FirebaseErrorBoundary.jsx";
 
@@ -12,7 +12,7 @@ function App() {
 		<FirebaseErrorBoundary>
 			<Router>
 				<div className="app">
-					<main className="auth-container">
+					<main>
 						<Routes>
 							<Route path="" element={<Register />} />
 							<Route path="login" element={<Login />} />
